@@ -6,12 +6,12 @@ import logo from '../../assets/images/logo.png'
 const Info = () => {
   return (
     <section className="relative bg-white py-16">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 -mt-28">
+      <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 -mt-28">
 
         <div className="space-y-5 lg:pl-16">
-          <img src={logo} alt="Company logo" className="w-24" />
-          <p className="text-gray-400 text-base">info@company.com</p>
-          <div className="flex gap-3">
+          <img src={logo} alt="Company logo" className="w-24 mx-auto lg:mx-0" />
+          <p className="text-gray-400 text-base text-center lg:text-left">info@company.com</p>
+          <div className="flex justify-center lg:justify-start gap-3">
             {[ImFacebook, ImTwitter, ImBehance, ImInstagram].map((Icon, i) => (
               <a
                 key={i}
@@ -24,7 +24,7 @@ const Info = () => {
           </div>
         </div>
 
-        <div>
+        <div className="text-center lg:text-left">
           <h3 className="text-gray-900 font-semibold text-lg mb-5">Services</h3>
           <ul className="space-y-3 text-gray-400 text-base">
             {["SEO Development", "Business Growth", "Social Media Managment", "Website Optimization"].map((item, i) => (
@@ -35,7 +35,7 @@ const Info = () => {
           </ul>
         </div>
 
-        <div className="lg:-ml-4">
+        <div className="text-center lg:text-left">
           <h3 className="text-gray-900 font-semibold text-lg mb-5">Community</h3>
           <ul className="space-y-3 text-gray-400 text-base">
             {["Digital Marketing", "Business Ideas", "Website Checkup", "Page Speed Test"].map((item, i) => (
@@ -46,12 +46,12 @@ const Info = () => {
           </ul>
         </div>
 
-        <div className="lg:-ml-16">
+        <div className="text-center lg:text-left">
           <h3 className="text-gray-900 font-semibold text-lg mb-5">Subscribe Newsletters</h3>
           <p className="text-gray-400 mb-6 text-base">
             Get our latest news and ideas to your <br /> inbox
           </p>
-          <div className="relative max-w-[300px]">
+          <div className="relative max-w-[300px] mx-auto lg:mx-0">
             <input
               type="email"
               placeholder="Your Email"
