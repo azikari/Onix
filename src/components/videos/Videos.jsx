@@ -27,7 +27,7 @@ const Videos = () => {
       <img src={decorLeft} alt="decor-left" className="absolute top-15 left-0 z-0" />
       <img src={decorRight} alt="decor-right" className="absolute top-0 right-0 z-0" />
 
-      <div className="mx-auto relative z-10 flex flex-col lg:flex-row w-full max-w-[1250px] px-6 gap-8">
+      <div className="mx-auto relative z-10 flex flex-col lg:flex-row w-full max-w-[1300px] px-6 gap-8">
         <div className="relative w-full lg:flex-1 overflow-hidden aspect-video">
           <div className="absolute top-0 left-0 px-6 py-6 bg-[#ff695f] text-white font-semibold rounded-tl-3xl rounded-br-3xl z-20 flex flex-col w-max">
             <span className="text-base lg:text-lg">{activeVideo.tag}</span>
